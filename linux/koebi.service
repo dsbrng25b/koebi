@@ -1,0 +1,16 @@
+[Unit]
+Description=Koebi Temperature Service
+After=influxdb.service
+
+[Service]
+ExecStart=/opt/koebi/koebi -tag.location=test -tag.room=test
+StandardOutput=syslog
+StandardError=syslog
+KillMode=mixed
+KillSignal=SIGINT
+TimeoutStopSec=15
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+
