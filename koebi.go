@@ -4,7 +4,7 @@ import (
     "flag"
     "log"
     "net/http"
-    "github.com/dsbrng25b/koebi/sensor"
+    "github.com/dvob/koebi/sensor"
     "encoding/json"
     "time"
     "github.com/influxdata/influxdb/client/v2"

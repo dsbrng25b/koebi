@@ -51,14 +51,14 @@ export GOPATH=$HOME/go
 ```
 ### Köbi bauen
 ```shell
-go get github.com/dsbrng25b/koebi
-go install github.com/dsbrng25b/koebi 
+go get github.com/dvob/koebi
+go install github.com/dvob/koebi 
 ```
 ### Köbi installieren
 ```shell
 mkdir /opt/koebi
 cp $GOPATH/bin/koebi /opt/koebi/
-cp $GOPATH/src/github.com/dsbrng25b/koebi/linux/koebi.service /lib/systemd/system/
+cp $GOPATH/src/github.com/dvob/koebi/linux/koebi.service /lib/systemd/system/
 systemctl enable koebi.service
 systemctl start koebi.service
 ```
